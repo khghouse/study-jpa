@@ -1,7 +1,6 @@
 package com.study.jpa.example04.entity;
 
 import java.time.LocalDateTime;
-import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Convert;
@@ -11,8 +10,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 import com.study.jpa.example04.converter.OrderStatusCustomConverter;
-import com.study.jpa.example04.entity.Orders.OrdersBuilder;
-import com.study.jpa.example04.enums.OrderStatus;
 import com.study.jpa.example04.enums.OrderStatusCustom;
 
 import lombok.AllArgsConstructor;
