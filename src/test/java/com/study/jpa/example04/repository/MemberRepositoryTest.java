@@ -14,11 +14,10 @@ public class MemberRepositoryTest {
 
 	@Test
 	public void createTest() throws Exception {
-		Member member = Member
-				.builder()
-				.name("È«±æµ¿")
-				.city("¼­¿ï½Ã")
-				.street("¿Ã¸²ÇÈ´ë·Î")
+		Member member = Member.builder()
+				.name("í™ê¸¸ë™")
+				.city("ì„œìš¸ì‹œ")
+				.street("ì˜¬ë¦¼í”½ëŒ€ë¡œ")
 				.zipcode("12345")
 				.build();
 
