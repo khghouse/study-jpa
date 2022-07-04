@@ -24,7 +24,7 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 @Entity(name = "orderEx05")
-@Table(name = "ORDERS")
+@Table(name = "orders")
 @Getter
 @Builder
 @ToString
