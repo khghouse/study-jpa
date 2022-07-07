@@ -1,12 +1,20 @@
 package com.study.jpa.repository;
 
+import javax.transaction.Transactional;
+
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import com.study.jpa.entity.Item;
 
+/*
+@ExtendWith(SpringExtension.class)
+@DataJpaTest
+@AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
+*/
 @SpringBootTest
+@Transactional
 public class ItemRepositoryTest {
 
 	@Autowired
