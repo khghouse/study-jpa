@@ -1,6 +1,10 @@
 package com.study.jpa.repository;
 
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.MatcherAssert.assertThat;
+
 import java.time.LocalDateTime;
+import java.util.Optional;
 
 import javax.transaction.Transactional;
 
@@ -42,5 +46,16 @@ public class OrderRepositoryTest {
 
 		System.out.println("order : " + order);
 		orderRepository.save(order);
+	}
+
+	@Test
+	public void readTest() {
+
+		Order order = Optional.ofNullable(orderRepository.findById(1L)).get()
+				.orElseThrow(() -> new IllegalArgumentException());
+
+		Member member = order.getMember();
+		assertThat("홍길동", equalTo(member.getName()));
+		assertThat("12345", equalTo(member.getZipcode()));
 	}
 }
