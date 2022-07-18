@@ -23,11 +23,11 @@ import com.study.jpa.repository.OrderRepository;
 @ExtendWith(MockitoExtension.class)
 public class OrderServiceTest {
 
-	@InjectMocks
-	private OrderService orderService;
-
 	@Mock
 	private OrderRepository orderRepository;
+	
+	@InjectMocks
+	private OrderService orderService;
 
 	@Test
 	public void createOrder() throws Exception {
