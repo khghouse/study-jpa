@@ -3,6 +3,7 @@ package com.study.jpa.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.study.jpa.dto.OrderDto;
 import com.study.jpa.entity.Order;
 import com.study.jpa.repository.OrderRepository;
 
@@ -14,5 +15,9 @@ public class OrderService {
 
 	public Order createOrder(final Order order) throws Exception {
 		return orderRepository.save(order);
+	}
+
+	public Order createOrder(final OrderDto orderDto) throws Exception {
+		return null;
 	}
 }
