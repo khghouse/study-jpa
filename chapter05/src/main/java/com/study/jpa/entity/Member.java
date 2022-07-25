@@ -38,4 +38,8 @@ public class Member {
 	private String city;
 	private String street;
 	private String zipcode;
+
+	public void updateZipcode(String zipcode) {
+		this.zipcode = zipcode;
+	}
 }
